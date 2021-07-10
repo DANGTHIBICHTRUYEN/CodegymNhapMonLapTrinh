@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TẠO THỜI KHÓA BIỂU</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>TẠO THỜI KHÓA BIỂU</h1>
+
+    <form action="">
+        <button type="submit">Hủy</button>
+        <button type="reset" >Tạo</button>
+        <table>
+            <tr>
+                <td>Lớp:</td>
+                <td>
+                    <input type="text" name="class" id="class" placeholder="Nhập tên lớp">
+                </td>
+                <td>Thời gian học:</td>
+                <td>
+                    <select name="time" id="time">
+                        <option>1h-2h</option>
+                        <option>2h-3h</option>
+                        <option>3h-4h</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Giáo viên:</td>
+                <td>
+                    <input type="text" name="teacher" id="tearcher" placeholder="Nhập tên giáo viên">
+                </td>
+                <td>Ngày học:</td>
+                <td>
+                    <input type="radio" name="le" value="le"> <span>Thứ 3, 5, 7</span>
+                    <input type="radio" name="chan" value="chan"><span>Thứ 2, 4, 6</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Phòng học:</td>
+                <td>
+                    <select name="room" id="room">
+                        <option>A1</option>
+                        <option>A2</option>
+                        <option>B1</option>
+                        <option>B2</option>
+                    </select>
+                </td>
+                <td>Mật khẩu phòng</td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+        </table> <br>
+    </form>
+    <table border="1">
+        <tr>
+            <th colspan="3"> </th>
+            <th>Thứ 3</th>
+            <th>Thứ 5</th>
+            <th>Thứ 7</th>
+        </tr>
+        <tr>
+            <th>Tuần </th>
+            <th>Ngày bắt đầu</th>
+            <th>Ngày kết thúc</th>
+            <th colspan="3">Môn học</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>
+                <input type="date" name="date" value="date">
+            </td>
+            <td><input type="date" name="date" value="date"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            
+        </tr>
+        <tr>
+            <td>02</td>
+            <td><input type="date" name="date" value="date"></td>
+            <td><input type="date" name="date" value="date"></td>
+            <td><input type="text" name="môn 1"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td>03</td>
+            <td><input type="date" name="date" value="date"></td>
+            <td><input type="date" name="date" value="date"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td> 
+        </tr>
+        <tr>
+            <td>04</td>
+            <td><input type="date" name="date" value="date"></td>
+            <td><input type="date" name="date" value="date"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td> 
+        </tr>
+                        
+        
+        
+    </table>
+</body>
+
+</html>
