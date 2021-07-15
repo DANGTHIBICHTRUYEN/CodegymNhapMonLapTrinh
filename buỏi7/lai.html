@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+     <script>
+         let lai_suat=prompt("Nhập lãi suất");
+         let tien_gui=prompt("Nhập số tiền bạn gửi");
+         let nam=prompt("Nhập số năm");
+         lai_suat = parseInt(lai_suat);
+         tien_gui = parseInt(tien_gui);
+         nam = parseInt(nam);
+         let tong = ( tien_gui + nam*(tien_gui*(lai_suat/100)));
+         document.write("Sau n năm số tiền cả gốc lẫn lãi là: " + tong);
+
+        </script>
+    </body>
+</html>
