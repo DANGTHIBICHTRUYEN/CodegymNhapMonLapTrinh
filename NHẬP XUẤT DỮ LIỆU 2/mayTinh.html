@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Máy tính</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <input type="text" id="name">
+<button onclick="get_name()">Click</button>
+<p id="result"></p>
+<script>
+    function get_name() {
+        let name = document.getElementById("name").value ;
+        document.getElementById("result").innerHTML = "Xin chào " + name ;
+        console.log(name);
+    }
+    
+</script> -->
+    <input type="number" id="number1">
+    <input type="number" id="number2"><br>
+    <br>
+    <span><button onclick="cong()">Addtion(+)</button></span>
+    <span><button onclick="tru()">Subtraction(-)</button></span>
+    <span><button onclick="nhan()">Multiplication(*)</button></span>
+    <span><button onclick="chia()">Division(/)</button></span>
+    <p id="result"></p>
+    <script>
+        function cong() {
+            let num1 = +document.getElementById("number1").value;
+            let num2 = +document.getElementById("number2").value;
+            let sum = num1 + num2;
+            document.getElementById("result").innerHTML = sum;
+
+
+        }
+        function tru() {
+            let num1 = +document.getElementById("number1").value;
+            let num2 = +document.getElementById("number2").value;
+            let tru = num1 - num2;
+            document.getElementById("result").innerHTML = tru;
+
+        }
+        function nhan() {
+            let num1 = +document.getElementById("number1").value;
+            let num2 = +document.getElementById("number2").value;
+            let nhan = num1 * num2;
+            document.getElementById("result").innerHTML = nhan;
+
+        }
+        function chia() {
+            let num1 = +document.getElementById("number1").value;
+            let num2 = +document.getElementById("number2").value;
+            let chia = num1 / num2;
+            document.getElementById("result").innerHTML = chia;
+
+        }
+    </script>
+
+</body>
+
+</html>

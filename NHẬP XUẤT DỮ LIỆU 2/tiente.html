@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tiền tệ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <label><b>Amount</b></label>
+    <input type="number" id="tien">
+    <label ><b>From Currency</b></label>
+    <select name="to" id="to_currency">
+        <option value="VND">Việt Nam Đồng</option>
+        <option value="USD">Đô la Mỹ</option>
+    </select>
+    <label><b>To Currency</b></label>
+    <select name="from" id="from_currency">
+        <option value="VND">Việt Nam Đồng</option>
+        <option value="USD">Đô la Mỹ</option>
+    </select>
+    <button onclick="chuyendoi()" style="background-color: burlywood;"><b>Convert</b></button>
+    <p id="result"></p>
+
+
+    <script>
+        function chuyendoi() {
+            let chuyen_doi = +document.getElementById("tien").value;
+            let to = document.getElementById("to_currency").value;
+            let from = document.getElementById("from_currency").value;
+            if (to == from) {
+                document.getElementById("result").innerHTML = "<b>Result: </b> " + chuyen_doi;
+            }
+            if (to == "VND" && from == "USD") {
+                document.getElementById("result").innerHTML = "<b>Result: </b> " + chuyen_doi/23000 + " <b> USD</b>";
+            }
+            if (to == "USD" && from == "VND") {
+                document.getElementById("result").innerHTML = "<b>Result: </b> " + chuyen_doi*23000 + " <b> VND</b>";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
