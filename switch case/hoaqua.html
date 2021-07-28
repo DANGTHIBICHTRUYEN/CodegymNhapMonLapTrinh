@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h2 style="font-size: 30px; color: darkred;">TRA CỨU GIÁ HOA QUẢ</h2>
+    <table>
+        <tr>
+            <td style="font-size: 20px;">Sản phẩm:</td>
+            <td>
+                <select id="trai_cay" style="font-size: 20px;">
+                    <option value="oi">Ổi</option>
+                    <option value="dua">Dưa hấu</option>
+                    <option value="tao">Táo</option>
+                    <option value="xoai">Xoài</option>
+                    <option value="cam">Cam</option>
+                    <option value="chomchom">Chôm chôm</option>
+                    <option value="mangcut">Măng cụt</option>
+                </select>
+            </td>
+            <td> <button onclick="test()" style="font-size: 20px;">Kiểm tra</button></td>
+        </tr>
+
+    </table>
+    
+   
+    <p id="result" style="font-size: 20px; color: darksalmon;"></p>
+    <script>
+        function test() {
+
+            let tc = document.getElementById("trai_cay").value;
+            switch (tc) {
+                case "oi":
+                case "dua":
+                    document.getElementById("result").innerHTML = "Giá sản phẩm là: 20000 <b>VNĐ/kg</b>";
+                    break;
+                case "tao":
+                case "xoai":
+                    document.getElementById("result").innerHTML = "Giá sản phẩm là: 30000 <b>VNĐ/kg</b>";
+                    break;
+                case "cam":
+                case "chomchom":
+                    document.getElementById("result").innerHTML = "Giá sản phẩm là: 40000 <b>VNĐ/kg</b>";
+                    break;
+                case "mangcut":
+                    document.getElementById("result").innerHTML = "Giá sản phẩm là: 50000 <b>VNĐ/kg</b>";
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

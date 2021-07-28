@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <H3>THÁNG BẠN MUỐN NHẬP LÀ GÌ?</H3>
+    <input type="number" id="num" style="background-color: ghostwhite;">
+    <button onclick="month()" style="background-color: lightgray;">Click !</button>
+    <p id="result"></p>
+    <script>
+        function month() {
+            let thang = +document.getElementById("num").value;
+            switch (thang) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    document.getElementById("result").innerHTML = "Tháng " + thang + " <i>là tháng có 31 ngày</i>";
+                    break;
+                case 2:
+                    document.getElementById("result").innerHTML = "Tháng " + thang + " <i>là tháng có 28 hoặc 29 ngày</i>";
+                    break;
+                // default:
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    document.getElementById("result").innerHTML = "Tháng " + thang + " <i>là tháng có 30 ngày</i>";
+                    break;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

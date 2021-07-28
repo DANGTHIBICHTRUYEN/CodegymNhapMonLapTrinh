@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Giá Hoa Quả</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <h2>TRA CỨU GIÁ HOA QUẢ</h2>
+    <!-- <table>
+
+        <tr>
+            <td>Sản phẩm</td>
+            <td>
+                <select id="trai_cay">
+                    <option value="oi">Ổi</option>
+                    <option value="dua">Dưa hấu</option>
+                    <option value="tao">Táo</option>
+                    <option value="xoai">Xoài</option>
+                    <option value="cam">Cam</option>
+                    <option value="chomchom">Chôm chôm</option>
+                    <option value="mangcut">Măng cụt</option>
+                </select>
+            </td>
+        </tr>
+
+    </table> -->
+    <input type="text" id="hoaqua" style="background-color: lightgrey;">
+    <button onclick="test()">Kiểm tra</button>
+    <p id="result"></p>
+    <script>
+        function test() {
+            let hoaqua = document.getElementById("hoaqua").value;
+            switch (hoaqua) {
+                case "Ổi":
+                case "Dưa Hấu":
+                    document.getElementById("result").innerHTML = "20000 <b>VNĐ/kg</b>";
+                    break;
+                case "Táo":
+                case "Xoài":
+                    document.getElementById("result").innerHTML = "30000 <b>VNĐ/kg</b>";
+                    break;
+                case "Cam":
+                case "Chôm Chôm":
+                    document.getElementById("result").innerHTML = "40000 <b>VNĐ/kg</b>";
+                    break;
+                case "Măng Cụt":
+                    document.getElementById("result").innerHTML = "50000 <b>VNĐ/kg</b>";
+                    break;
+            }
+            // let tc = document.getElementById("trai_cay");
+            // switch (tc) {
+            //     case oi:
+            //     case dua:
+            //         document.getElementById("result").innerHTML = "20000 <b>VNĐ/kg</b>";
+            //         break;
+            //     case tao:
+            //     case xoai:
+            //         document.getElementById("result").innerHTML = "30000 <b>VNĐ/kg</b>";
+            //         break;
+            //     case cam:
+            //     case chomchom:
+            //         document.getElementById("result").innerHTML = "40000 <b>VNĐ/kg</b>";
+            //         break;
+            //     case mangcut:
+            //         document.getElementById("result").innerHTML = "50000 <b>VNĐ/kg</b>";
+            //         break;
+            // }
+           
+        }
+    </script>
+</body>
+
+</html>

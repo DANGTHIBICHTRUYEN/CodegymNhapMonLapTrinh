@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>tính tiền</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 style="color: rgb(221, 17, 17);">Tính điểm ĐH khối D</h1>
+    <table>
+        <tr>
+            <td style="font-size: 20px;">Môn Toán</td>
+            <td><input type="text" id="toan" style=" background-color: white;"></td>
+        </tr>
+        <tr>
+            <td style="font-size: 20px;">Môn Anh</td>
+            <td><input type="text" id="anh" style="background-color: white;"></td>
+        </tr>
+        <tr>
+            <td style="font-size: 20px;">Môn Văn</td>
+            <td><input type="text" id="van" style="background-color: white;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: ghostwhite; font-size: 20px;">Khu Vực</td>
+            <td>
+                <select name="" id="khu_vuc" style="font-size: 15px;">
+                    <option value="k1">KV1</option>
+                    <option value="k2nt">KV2-NT</option>
+                    <option value="k2">KV2</option>
+                    <option value="k3">KV3</option>
+
+                </select>
+            </td>
+        </tr>
+    </table> <br>
+    <button onclick="test()" style="background-color: ghostwhite; font-size: 18px;"><b>Tính điểm</b></button>
+    <p id="result" style="color: red; font-size: 25px;"></p>
+    <script src="tinhdiem.js">
+        // function test() {
+        //     let t = +document.getElementById("toan").value;
+        //     let a = +document.getElementById("anh").value;
+        //     let v = +document.getElementById("van").value;
+        //     let kv = document.getElementById("khu_vuc").value;
+           
+        //     switch (kv) {
+        //         case "k1":
+        //             document.getElementById("result").innerHTML = t + a + v + 0.75;
+
+        //             break;
+        //         case "k2nt":
+        //             document.getElementById("result").innerHTML = t + a + v + 0.5;
+        //             break;
+        //         case "k2":
+        //             document.getElementById("result").innerHTML = t + a + v + 0.25;
+        //             break;
+        //         case "k3":
+        //             document.getElementById("result").innerHTML = t + a + v + 0;
+        //             break;
+        //     }
+        // }
+         // if (kv == "k1") {
+            //     document.getElementById("result").innerHTML = t + a + v + 0.75;
+
+            // }
+            // if (kv == "k2nt") {
+            //     document.getElementById("result").innerHTML = t+a+v + 0.5;
+            // }
+            // if (kv == "k2") {
+            //     document.getElementById("result").innerHTML = t+a+v + 0.25 ;
+
+
+            // }
+            // if (kv == "k3"){
+            //     document.getElementById("result").innerHTML = t+a+v + 0;
+
+            // }
+
+    </script>
+
+
+</body>
+
+</html>
