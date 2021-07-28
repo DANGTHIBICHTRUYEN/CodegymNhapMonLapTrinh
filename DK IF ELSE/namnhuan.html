@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NĂM NHUẬN</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <style></style>
+
+  <body>
+    <h3>ỨNG DỤNG KIỂM TRA NĂM NHUẬN</h3>
+    <input type="text"  id="year" />
+    <button onclick="test()" , style="background-color: rgb(212, 206, 206)"><b>Kiểm tra</b></button>
+    <p id="result"></p>
+    <script>
+      function test() {
+        let year = +document.getElementById("year").value;
+        if (year % 4 == 0) {
+          if (year % 100 == 0) {
+            if (year % 400 == 0) {
+              document.getElementById("result").innerHTML = year + " <i>là năm nhuận</i>";
+            } else {
+              document.getElementById("result").innerHTML = year + " <i>không là năm nhuận</i>";
+            }
+          } else {
+            document.getElementById("result").innerHTML = year + " <i>là năm nhuận</i>";
+          }
+        } else {
+          document.getElementById("result").innerHTML = year + " <i>không là năm nhuận</i>";
+        }
+    }
+    </script>
+  </body>
+</html>
