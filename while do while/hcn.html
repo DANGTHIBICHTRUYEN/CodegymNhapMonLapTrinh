@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        let cd = Number(prompt("Nhập số chiều dài:"));
+        let cr = Number(prompt("Nhập sốt chiều rộng:"));
+        let kitu = prompt("Nhập kí tự")
+        let i=1;
+        let j=1;
+
+        while (i <= cd) {
+            
+            while (j <= cr) {
+                if (i == 1 || i == cd || j == 1 || j == cr)
+                    document.write(kitu);
+                else document.write("&nbsp" + "&nbsp");
+                j++;
+            }
+            
+            document.write("<br>");
+            j = 1;
+            i++;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        //bai1
+        // let mk = prompt("Mời bạn nhập mật khẩu");
+        // if(mk != "123456"){
+        //     alert("Xin mời bạn vào trang");
+        // }else{
+        //     alert("Bạn nhập sai mật khấu");
+        // }
+        // while (mk !="123456" ) {
+        //     alert("Nhập lại mật khẩu")
+        //     mk = prompt ("Nhập lại mật khẩu:")
+        // }
+        // document.write("Mật khẩu đúng. Mời vào !")
+
+
+        //bai 2
+        // let pass = prompt("Nhập mật khẩu:");
+        // let count_wrong = 0;
+        // while (pass !== "123456") {
+        //     count_wrong++;
+        //     if (count_wrong == 5) {
+        //         break;
+        //     }
+        //     alert("Vui lòng nhập lại");
+        //     pass = prompt("Nhập lại mật khẩu");
+        // }
+        // if (count_wrong == 5) {
+        //     document.write("Bạn bí khóa đăng nhập");
+        // } else {
+        //     document.write("Mật khẩu đúng. Mời vào");
+        // }
+
+        // bài nhiệt độ
+        let nhietdo = Number(prompt("Nhập vào nhiệt độ"))
+        while (nhietdo < 20 || nhietdo > 100) {
+            if (nhietdo < 20) {
+                alert("Nhiệt độ quá lạnh")
+                nhietdo = Number(prompt("Nhập vào nhiệt độ"))
+            } else if (nhietdo > 100) {
+                alert("Nhiệt độ quá nóng")
+                nhietdo = Number(prompt("Nhập vào nhiệt độ"))
+            }
+        }
+        alert("Nhiệt độ bình thường")
+    </script>
+
+</body>
+
+</html>
