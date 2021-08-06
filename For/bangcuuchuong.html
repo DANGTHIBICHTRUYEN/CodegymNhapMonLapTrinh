@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bảng cửu chương</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 style="color: brown; text-align: center; font-size: 50px;">Bảng cửu chương</h1>
+    <script>
+        let bang
+        bang = "<table border='1' cellspacing='0' cellpadding='4' width= '100%'>"
+        for (let i = 1; i <= 10; i++) {
+            bang += "<tr>"
+            for (let j = 1; j <= 10; j++) {
+                bang += "<td align='center'>" + j + "*" + i + " = " + (i * j) + "</td>"
+            }
+            bang += "</tr>"
+        }
+        bang += "</table>"
+        document.write(bang)
+    </script>
+</body>
+
+</html>

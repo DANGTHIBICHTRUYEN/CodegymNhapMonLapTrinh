@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        let kitu = prompt("Nhập kí tự :");
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j <= i; j++) {
+                document.write(kitu);
+            }
+            document.write("<br>");
+        }
+
+        document.write("<br><br>");
+
+        for (let i = 5; i > 0; i--) {
+            for (let j = 0; j < i; j++) {
+                document.write(kitu);
+            }
+            document.write("<br>");
+        }
+
+        document.write("<br><br>");
+
+        document.write("<div style='width: 100px' align='right' >");
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j <= i; j++) {
+                document.write(kitu);
+
+            }
+            document.write("<br>");
+        }
+        document.write("</div><br><br>");
+
+        document.write("<div style='width: 100px' align='right'>");
+        for (let i = 5; i > 0; i--) {
+            for (let j = 0; j < i; j++) {
+                document.write(kitu);
+            }
+            document.write("<br>");
+        }
+        document.write("</div>");
+
+
+    </script>
+</body>
+
+</html>
