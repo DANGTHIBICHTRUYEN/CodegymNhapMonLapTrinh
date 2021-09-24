@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+    <h1>Tra từ điển</h1>
+<input type="text" id="tieng_anh" >
+<input type="button" value="Dịch" onclick="dich()">
+<p id="tieng_viet"></p>
+<script>
+    let tieng_anh = document.getElementById("tieng_anh")
+    console.log(tieng_anh.value)
+    let mangTA = ["coffee", "old", "orange", "packet", "computer science", "table", "math", "thanks"]
+    let mangTV = ["Cà phê", "Cũ, cổ xưa", "Quả cam", "Gói dữ liệu", "Khoa học dữ liệu", "Cái bàn", "môn Toán", "Cảm ơn"]
+    let dem =0
+    function dich() {
+        for (let i=0; i<mangTA.length; i++) {
+            if (mangTA[i] == tieng_anh.value) {
+                dem=0
+                document.getElementById("tieng_viet").innerHTML = mangTV[i]
+                break
+            }else{
+                dem++
+            }
+        }
+        if(dem != 0){
+            alert("Không có dữ liệu")
+        }
+    }
+
+</script>
+</body>
+</html>

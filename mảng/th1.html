@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo và thao tác với mảng</title>
+</head>
+
+<body>
+    <h1><b>Sample Screen:</b></h1>
+    <input type="text" id="nhapmang" value="">
+    <button type="button" id="nhap" onclick="nhap_mang()">Nhập</button>
+    <input type="submit" id="xoa" value="Xóa" onclick="xoa_mang()">
+    <input id="hienthi" type="submit" onclick="hien_thi_mang()" value="Hiển thị">
+ 
+    <div id="result"></div>
+    <script>
+        let mang = []
+        function nhap_mang() {
+            let them = document.getElementById("nhapmang").value
+            mang.push(them)
+            alert("Bạn đã thêm thành công!!!")
+        }
+        function xoa_mang(){
+            mang.pop();
+        }
+
+        function hien_thi_mang() {
+            let e = "<hr>"
+            for (let i = 0; i < mang.length; i++) {
+                e += ("Mang[" + i + "] = " + mang[i] + "<br>");
+            }
+            document.getElementById("result").innerHTML = e;
+        }
+        
+    </script>
+</body>
+
+</html>

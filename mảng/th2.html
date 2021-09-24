@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Đảo ngược trong mảng</h1>
+    <script>
+        debugger;
+        let x = [-3, 5, 1, 3, 2, 10];
+        let first = 0;
+        let last = x.length - 1;
+        for (first;first < last;first++,last--) {
+            let b = x[first];
+            x[first] = x[last];
+            x[last] = b;
+        }
+        document.write(x);
+    </script>
+
+</body>
+
+</html>

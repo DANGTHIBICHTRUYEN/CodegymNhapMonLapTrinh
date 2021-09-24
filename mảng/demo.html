@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        let arr_2c = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ]
+        for (let i = 0; i < arr_2c.length; i++) {
+            for (let j = 0; j < arr_2c[i].length; j++) {
+                document.write(arr_2c[i][j] + ",");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+
+        // tính tổng các phần tử trong mảng 2 chiều
+        let total = 0;
+        for (let i = 0; i < arr_2c.length; i++) {
+            for (let j = 0; j < arr_2c.length; j++) {
+                total += arr_2c[i][j];
+            }
+            document.write("Tổng các phần tử trong mảng là: "+ total +"<br>");
+        }
+        //
+        document.write("<br>");
+        // Tổng các phần tử theo từng cột
+        for(let j = 0 ; j < arr_2c[0].length ; j ++) {
+            let total_colum = 0;
+            for(let i =0 ; i<arr_2c.length; i++){
+                total_colum +=arr_2c[i][j];
+            }
+            document.write("Tổng của cột " + j + " là: " + total_colum + "<br>")
+        }
+        document.write("<br>");
+        //Tim hàng có tổng lớn nhất
+        let arr_total_row = [];
+        for (let i = 0; i < arr_2c.length; i++) {
+            let total_row = 0;
+            for (let j = 0; j < arr_2c[i].length; j++) {
+                total_row += arr_2c[i][j];
+            }
+            arr_total_row.push(total_row);
+        }
+         let max = arr_total_row[0];
+         let index = 0 ;
+         for ( x=1 ; x < arr_total_row.length; x++){
+             if (max < arr_total_row[x]){
+                 max = arr_total_row[x];
+                 index= x;
+             }
+         }
+         document.write ("Hàng " + index + " có tổng lớn nhất là:" + max);
+
+    </script>
+
+</body>
+
+</html>
