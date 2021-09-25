@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS CIRCLE</title>
+</head>
+
+<body>
+    <h1>XÂY DỰNG LỚP HÌNH TRÒN</h1>
+    <!-- <span>Circle:</span>
+    <input type="number" id="circle" placeholder="Nhập bán kính" oninput="click()" onchange="click()"> <br>
+    <button onclick="click(this.Circle)">Click</button>
+    <p id="result"></p> -->
+    <script>
+        class Circle {
+            constructor (radius, color) {
+                this.radius = radius;
+                this.color = color;
+                
+            }
+            getRadius() {
+                return this.radius;
+            }
+            getPerimeter(){
+                return Math.PI *2 * this.radius;
+            }
+            getArea() {
+                return Math.PI * this.radius * this.radius;
+            }
+        };
+            let bk = +prompt("Nhập vào bk :");
+            let circle = new Circle(bk);
+            let perimeter = circle.getPerimeter();
+            let radius = circle.getRadius();
+            let area = circle.getArea();
+            document.write("Radius: " + radius + "<br>" +"Circumference:" + circumference +"<br>" + "Area: " + area);
+    </script>
+</body>
+
+</html>

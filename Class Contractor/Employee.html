@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+</head>
+
+<body>
+    <script>
+        class Employee {
+            constructor(id, firstName, lastName, salary) {
+                this.ID = id;
+                this.FirstName = firstName;
+                this.LastName = lastName;
+                this.Salary = salary;
+            }
+            getID() {
+                return this.ID;
+            }
+            getFirstName() {
+                return this.FirstName;
+            }
+            getLastName() {
+                return this.LastName;
+            }
+            getName() {
+                return this.FirstName + " " + this.LastName;
+            }
+            getSalary() {
+                return this.Salary;
+            }
+            getAnnualSalary() {
+                return this.Salary * 12;
+            }
+            raiseSalary(percent) {
+                this.salary = this.Salary + this.Salary * percent / 100;
+                return this.salary;
+            }
+        }
+        let employee = new Employee(1, "Phạm Bình", "An", 10000000);
+        let name = employee.getName();
+        let salary = employee.getSalary();
+        let annual_salary = employee.getAnnualSalary();
+        let raise_salary = employee.raiseSalary(20);
+        employee.getAnnualSalary();
+        document.write("Tên Nhân viên: " + name + "<br>" +
+            "Lương nhân viên: " + salary + "<br>" +
+            "Lương nhân viên một năm: " + annual_salary + "<br>" +
+            "Lương nhân viên sau khi tăng: " + raise_salary + "<br>" +
+            "Lương nhân viên một năm sau khi tăng: " + employee.getAnnualSalary()*12);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hình chữ nhật</title>
+</head>
+
+<body>
+    <script>
+        class HinhChuNhat {
+            constructor(dai, rong) {
+                this.chieu_dai = dai;
+                this.chieu_rong = rong;
+            }
+            // setChieuDai() {
+            //     this.chieu_dai = dai;
+            // }
+            // setChieuRong() {
+            //     this.chieu_rong = rong;
+            // }
+            getChieuDai() {
+                return this.chieu_dai;
+            }
+            getChieuRong() {
+                return this.chieu_rong;
+            }
+            getChuVi() {
+                return (this.chieu_dai + this.chieu_rong) * 2;
+            }
+            getDienTich() {
+                return this.chieu_dai * this.chieu_rong;
+            }
+        }
+        let hinhchunhat = new HinhChuNhat(20, 25);
+        let chieu_dai = hinhchunhat.getChieuDai();
+        let chieu_rong = hinhchunhat.getChieuRong();
+        let chu_vi = hinhchunhat.getChuVi();
+        let dien_tich = hinhchunhat.getDienTich();
+        document.write("Chiều dài hình chữ nhật: " + chieu_dai + "<br>" + "Chiều rộng hình chữ nhật: " + chieu_rong + "<br>");
+        document.write("Chu vi hình chữ nhật: " + chu_vi + "<br>" + "Diện tích hình chữ nhật: " + dien_tich + "<br>" + "<br>");
+    </script>
+    <canvas id="canvas" width="chieu_dai" height="chieu_rong" style="border: 3px solid black"></canvas>
+
+
+</body>
+
+</html>
