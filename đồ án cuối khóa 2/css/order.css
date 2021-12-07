@@ -1,0 +1,292 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: SourceSerifPro;
+}
+
+@font-face {
+  font-family: SourceSerifPro;
+  src: url("font/Source_Serif_Pro/SourceSerifPro-Regular.ttf");
+}
+/*====mobile===== */
+#all {
+  width: 100%;
+  min-height: 100px;
+}
+#all nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 30%;
+  background: #6f4e37;
+  box-shadow: 1px 1px 2px;
+  z-index: 80;
+}
+#all nav #logo {
+  font-family: Lobster-Regular;
+  font-size: 15px;
+  padding: 15px 0px 0px 20px;
+  text-shadow: 3px 3px 5px #c68b59;
+}
+#all nav #logo a {
+  text-decoration: none;
+  color: white;
+}
+#all nav form {
+  width: 370px;
+  height: 50px;
+  line-height: 35px;
+}
+#all nav form input[type="text"] {
+  width: 70%;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 5px;
+  border-radius: 5px;
+  padding-left: 7px;
+}
+#all nav form input[type="text"]:focus {
+  outline: none;
+}
+#all nav form input[type="submit"] {
+  margin: 5px 0px 0px 5px;
+  width: 25%;
+  height: 32px;
+  line-height: 28px;
+  border-radius: 5px;
+  background: #6f4e37;
+  color: white;
+}
+#all nav ul {
+  width: 100%;
+  position: relative;
+  margin-top: 5PX;
+}
+#all nav ul li {
+  list-style: none;
+  width: 95px;
+  text-align: center;
+  float: left;
+  position: relative;
+  line-height: 30px;
+}
+#all nav ul li:hover {
+  background: #b46b43;
+}
+#all nav ul li:hover > ul {
+  display: block;
+}
+#all nav ul li a {
+  text-decoration: none;
+  color: #d7b19d;
+  font-size: 15px;
+}
+#all nav ul li ul {
+  display: none;
+  background: none;
+}
+#all nav ul li ul li {
+  float: none;
+  height: 30px;
+}
+#all nav ul li ul li ul {
+  margin-left: 95px;
+}
+#all nav ul li ul li ul li {
+  margin: 1px;
+}
+#all nav ul li ul li ul li:nth-child(1) {
+  margin-top: -37px;
+}
+#all nav ul li ul li:hover ul {
+  display: block;
+}
+#all nav ul li ul li:hover ul li {
+  background: #865439;
+}
+#all header {
+  width: 100%;
+  min-height: 660px;
+  background: linear-gradient(rgba(102, 71, 4, 0.3), #ecc060);
+  background-size: cover;
+  padding-top: 130px;
+}
+#all header form {
+  width: 370px;
+  min-height: 200px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  line-height: 25px;
+  font-size: 14px;
+}
+#all header form h2,
+#all header form h3 {
+  color: #865439;
+  text-align: center;
+  margin: 15px;
+}
+#all header form h3 {
+  font-size: 18px;
+}
+#all header form h5 {
+  font-size: 14px;
+}
+#all header form input {
+  height: 25px;
+  border-radius: 2px;
+  border: 1px solid #865439;
+  background: rgba(215, 177, 157, 0.1);
+  padding-left: 5px;
+}
+#all header form input:focus {
+  outline: none;
+}
+#all header form input[type="radio"] {
+  height: auto;
+  margin-left: 10px;
+}
+#all header form #info {
+  display: grid;
+  grid-template-columns: 25% 70%;
+  grid-gap: 10px;
+}
+#all header form #info input {
+  grid-column: 2 / 3;
+}
+#all header form #info label {
+  text-align: justify;
+  color: #865439;
+  grid-column: 1 / 2;
+}
+#all header form #info #gender {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  text-align: center;
+}
+#all header form hr {
+  margin-top: 10px;
+  border: 1px solid #c68b59;
+}
+#all header form #request {
+  display: grid;
+  grid-template-columns: 5% 35% 45% 15%;
+  grid-row-gap: 10px;
+}
+#all header form #request h5 {
+  margin: -15px auto 0px;
+  text-align: center;
+}
+#all header form #request input[type="number"] {
+  margin-right: 5px;
+}
+#all header form #adress2 {
+  width: 100%;
+}
+#all header form textarea {
+  width: 100%;
+  min-height: 80px;
+  border-radius: 5px;
+  background: rgba(215, 177, 157, 0.1);
+  padding: 5px;
+}
+#all header form textarea:focus {
+  outline: none;
+}
+#all header form #submit {
+  width: 90%;
+  margin: auto;
+}
+#all header form #submit input {
+  width: 40%;
+  height: 30px;
+  border-radius: 5px;
+  background: #6f4e37;
+  color: #d7b19d;
+  position: relative;
+}
+#all header form #submit input[type="reset"] {
+  display: block;
+  float: right;
+}
+#all header form #submit input:hover {
+  background: #865439;
+  color: white;
+  font-size: 14px;
+}
+
+footer {
+  width: 100%;
+  min-height: 50px;
+  background: #6f4e37;
+  color: white;
+  text-align: center;
+  padding: 15px 0px 0px 20px;
+
+}
+footer h2 {
+  margin-bottom: 10px;
+}
+footer p {
+  margin-bottom: 7px;
+}
+footer .BT {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* =====tables & desktop=== */
+@media only screen and (min-width: 768px) {
+  #all nav {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  #all nav form {
+    grid-column: 6 / 8;
+    grid-row: 1;
+    margin-top: 5px;
+  }
+  #all nav ul {
+    grid-column: 3 / 6;
+    grid-row: 1;
+    margin-top: 0px;
+  }
+  #all nav ul li {
+    line-height: 50px;
+  }
+  #all nav ul li ul li {
+    line-height: 30px;
+  }
+  #all nav ul li ul li ul li:nth-child(1) {
+    margin-top: -32px;
+  }
+  #all header {
+    padding-top: 60px;
+  }
+  #all header form {
+    width: 50%;
+    padding: 10px 20px;
+  }
+  #all header form #info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  #all header form #info input {
+    grid-column: 2 / 4;
+  }
+  #all header form #info #name {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+  #all header form #info #gender {
+    grid-column: 3 / 4;
+    grid-row: 1;
+  }
+}
+
+/*# sourceMappingURL=order.css.map */

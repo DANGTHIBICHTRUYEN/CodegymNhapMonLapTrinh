@@ -1,0 +1,345 @@
+html {
+  background: #faf7f2;
+  background-image: url(https://s3.postimg.org/s1n3ji1ur/paper_fibers_2_X.png);
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 50px;
+}
+h4{
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.u-clearfix:before,
+.u-clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.u-clearfix:after {
+  clear: both;
+}
+
+.u-clearfix {
+  *zoom: 1;
+  width: 100%;
+}
+
+.subtle {
+  color: #aaa;
+}
+
+.card-container {
+  margin: 25px auto 0;
+  position: relative;
+  width: 692px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 0 4px rgba(75, 75, 75, 0.07);
+  z-index: 1;
+}
+
+.card-body {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.card-number {
+  margin-top: 15px;
+}
+
+.card-circle {
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 22px;
+  font-size: 12px;
+  height: 25px;
+  text-align: center;
+  width: 25px;
+}
+
+.card-author {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin: 15px 0 0;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 60px;
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.card-description {
+  display: inline-block;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 10px 0;
+}
+
+.card-read {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  margin: 20px 0 20px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-read:after {
+  background-color: #b8bddd;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 7px;
+  width: 100%;
+}
+
+.card-tag {
+  margin: 5px 0 0;
+}
+
+.card-media {
+  width: 100%;
+  padding: 5px;
+}
+
+.card-shadow {
+  background-color: #fff;
+  box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 1), 0 2px 50px 2px rgba(0, 0, 0, 1),
+    0 0 100px 3px rgba(0, 0, 0, 0.25);
+  height: 1px;
+  margin: -1px auto 0;
+  width: 80%;
+  z-index: -1;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+#circle-shape-example {
+  font-family: Open Sans, sans-serif;
+  margin: 2rem;
+  padding: 2rem;
+}
+#circle-shape-example p {
+  line-height: 1.8;
+}
+#circle-shape-example .curve {
+  width: 20%;
+  height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right: 8rem;
+  border-radius: 100%;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+}
+#circle-shape-example .curve1 {
+  width: 20%;
+  height: auto;
+  min-width: 150px;
+  float: right;
+  margin-left: 5rem;
+  border-radius: 100%;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+}
+#circle-shape-example .curve2 {
+  width: 20%;
+  height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right: 8rem;
+  border-radius: 100%;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+}
+#circle-shape-example .curve3 {
+  width: 20%;
+  height: auto;
+  min-width: 150px;
+  float: right;
+  margin-left: 5rem;
+  border-radius: 100%;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+}
+
+
+/* FOOTER */
+
+footer.footer{
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+footer.footer .container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+  color: var(--white);
+}
+
+footer.footer .newsletter .form-element{
+  background: black;
+  display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+  padding: .5rem .7rem;
+  border: none;
+  background: transparent;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  width: 74%;
+}
+
+footer.footer .newsletter .form-element span{
+  background: var(--sky);
+  padding: .5rem .7rem;
+  cursor: pointer;
+}
+
+footer.footer .instagram div > img{
+  display: inline-block;
+  width: 25%;
+  height: 50%;
+  margin: .3rem .4rem;
+}
+
+footer.footer .follow div i{
+  color: white;
+  padding: 0 .4rem;
+}
+
+footer.footer .rights{
+  justify-content: center;
+  font-family:'Times New Roman', Times, serif;
+}
+
+footer.footer .rights h4 a{
+  text-align: center;
+  color: white;
+}
+
+footer.footer .move-up{
+  position: absolute;
+  right: 6%;
+  top: 50%;
+}
+
+footer.footer .move-up span{
+  color: rgb(163, 127, 29);
+}
+
+footer.footer .move-up span:hover{
+  color: white;
+  cursor: pointer;
+}
+
+/* ---------x------- Footer ----------x---------- */
+
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px){
+  .site-content .post-content > .post-image .post-info{
+      left: 2rem !important;
+      bottom: 1.2rem !important;
+      border-radius: 0% !important;
+  }
+
+  .site-content .sidebar .popular-post .post-info{
+      display: none !important;
+  }
+
+  footer.footer .container{
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/*      x       Viewport less then or equal to 1130px    x     */
+
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px){
+  .nav .nav-menu, .nav .nav-items{
+      flex-direction: column;
+  }
+
+  .nav .toggle-collapse{
+      display: initial;
+  }
+
+  main .site-content{
+      grid-template-columns: 100%;
+  }
+
+  footer.footer .container{
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+
+/*        x      Viewport less then or equal to 750px       x     */
+
+
+/*              Viewport less then or equal to 520px            */
+
+@media only screen and (max-width: 520px){
+  main .blog{
+      height: 125vh;
+  }
+
+  .site-content .post-content > .post-image .post-info{
+      display: none;
+  }
+
+  footer.footer .container > div{
+      padding:  1rem .9rem !important;
+  }
+
+  footer .rights{
+      padding: 0 1.4rem;
+      text-align: center;
+  }
+
+  nav .toggle-collapse{
+      width: 80% !important;
+  }
+
+}

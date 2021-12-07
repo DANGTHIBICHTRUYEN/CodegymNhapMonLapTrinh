@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ORDER</title>
+	<link rel="stylesheet" type="text/css" href="css/order.css">
+</head>
+<body>
+	<div id="all">
+		<nav>
+			<div id="logo"><a href="./index.html"><h1>COFFEE HOUSE</h1></a></div>
+			<form action="#">
+				<label for="search"></label>
+				<input type="text" placeholder="Search" id="search">
+				<input type="submit" value="Tìm kiếm">
+			</form>
+			<ul>	
+				<li>
+					<a href="/index.html">TRANG CHỦ</a>
+				</li>				
+				<li><a href="#menu">MENU</a>
+				</li>
+				<li><a href="#"> COFFEE</a>
+					<ul>
+						<li><a href="#">Loại</a>
+							<ul>
+								<li><a href="#">Late</a></li>
+								<li><a href="#">Cappuccino</a></li>
+								<li><a href="#">Espresso</a></li>
+								<li><a href="#">Cà phê Mocha</a></li>
+								<li><a href="#">Americano</a></li>
+								<li><a href="#">Latte Machiato</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Kích thước</a>
+							<ul>
+								<li><a href="#">nhỏ</a></li>
+								<li><a href="#">vừa</a></li>
+								<li><a href="#">to</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">ORDER</a></li>
+				<li><a href="#">GIỚI THIỆU</a></li>
+				<li><a href="/blog.html">BLOG</a></li>
+			</ul>
+		</nav>
+<!-- =====main===== -->
+		<header>
+			<form action="#" id="order">
+				<h2>PHIẾU ĐẶT HÀNG</h2>
+				<h3>Thông tin liên hệ</h3>
+				<div id="info">					
+					<label for="name">Họ và tên:</label><input type="text" id="name" placeholder="Họ và tên" required="">
+					<div id="gender">
+						<input type="radio" name="gender" id="men"><label for="men">Nam</label>
+						<input type="radio" name="gender" id="women"><label for="women">Nữ</label>
+						<input type="radio" name="gender" id="none"><label for="none">Không</label>
+					</div>
+					<label for="adress">Địa chỉ:</label><input type="text" id="adress" placeholder="Địa chỉ">
+					<label for="phone">Số điện thoại:</label><input type="phone" id="phone" placeholder="Số điện thoại" pattern="[0-9]{10}" required="">
+					<label for="email">Email:</label><input type="email" placeholder="Email">
+				</div>
+				<hr>
+				<h3>Đặt hàng</h3>
+				<div id="request">
+					<h5></h5>					
+					<h5>Coffee</h5>
+					<h5>Số lượng</h5>					
+					<h5></h5>
+					<input type="checkbox" id="number1"><label for="number1">Late</label>
+						<input type="number"> ly
+					<input type="checkbox" id="number2"><label for="number2">Cà phê Mocha</label>
+						<input type="number"> ly
+					<input type="checkbox" id="number3"><label for="number3">Cappuccino</label>
+						<input type="number"> ly
+						<input type="checkbox" id="number1"><label for="number1">Espresso</label>
+						<input type="number"> ly
+						<input type="checkbox" id="number1"><label for="number1">Latte Machiato</label>
+						<input type="number"> ly
+				</div>
+				<label for="adress2"><h5>Địa chỉ nhận hàng</h5></label><input type="text" id="adress2" placeholder="Số nhà/tên đường..." required="">
+				<label for="yeu_cau"><h5>Yêu cầu khác</h5></label>
+					<textarea name="request" id="yeu_cau"></textarea>
+				<div id="submit">
+					<input type="submit" value="Đặt hàng">
+					<input type="reset" value="Nhập lại">
+				</div>				
+			</form>
+		</header>
+<!-- =====footer===== -->
+		<footer>			
+			<h2 id="adress">COFFEE HOUSE</h2>
+			<p>Địa chỉ:TPHCM</p>
+			<p>Phone: 0126786153</p>
+			<div class="BT">
+				<rvedp>Copyright ©2019 All rights reserved | made by
+				</rvedp>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
